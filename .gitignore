@@ -1,4 +1,6 @@
-# Python-generated files
+.idea
+.venv
+
 __pycache__/
 *.py[oc]
 build/
@@ -6,5 +8,15 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
-.venv
+trash/
+data/
+backup/
+db/
+jsondb/
+tests/
+logs/
+
+**/.DS_Store
+Dockerfile
+.env.*
+

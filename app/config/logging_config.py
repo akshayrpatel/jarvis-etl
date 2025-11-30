@@ -1,17 +1,13 @@
-import os
 import logging
 from datetime import datetime
-
-from pathlib import Path
 from logging.config import dictConfig
-from app.config import APP_ENV_KEY, AppMode
 
-APP_ENV = os.environ.get(APP_ENV_KEY, AppMode.DEVELOPMENT)
+from app.config.settings import settings
 
-LOG_DIR = Path(__file__).parents[1] / "logs"
+LOG_DIR = settings.app_root / "logs"
 LOG_DIR.mkdir(exist_ok=True)
 LOG_DATE = datetime.now().strftime("%Y-%m-%d")
-LOG_FILE_NAME = f"{LOG_DATE}.jarvis-etl.{APP_ENV}.log"
+LOG_FILE_NAME = f"{LOG_DATE}.jarvis-etl.{settings.app_env}.log"
 LOG_FILE = LOG_DIR / LOG_FILE_NAME
 
 def configure_logging() -> None:
