@@ -2,8 +2,8 @@
 
 The **Jarvis ETL Data Pipeline** is the backend ingestion system for my AI-powered personal assistant - Jarvis. Its job is to process all the documents that describe my work, projects, and background, and convert them into embeddings that power semantic search on my portfolio.
 
-This pipeline runs entirely in Python and is designed to teach me the foundations of real-world RAG systems: file ingestion, chunking, embedding generation, background workers, and vector database indexing.
-
+> [!NOTE]
+> This project was developed using an **AI-augmented workflow**, leveraging LLMs to reason about architecture, validate system design ideas, and refine documentation. The project consists of code that was written with AI-assisted suggestions, but fully reviewed, validated, and owned by the developer.
 
 ## **Motivation & Purpose**
 
